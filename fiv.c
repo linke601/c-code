@@ -267,24 +267,156 @@
 //	return 0;
 //}
 // getchar()接收键盘输入一个字符 !=//不等于
+//int main()
+//{
+//	//int ch = getchar();//输入（接收）一个字符
+//	//putchar(ch);//输出字符
+//	//printf("%c\n", ch);
+//	//return 0;
+//	//int ch = 0;
+//	//while ((ch = getchar()) != EOF)//判断条件//EOF：文件结束标志
+//	//{//getchar遇到CTRL+Z结束
+//	//	//EOF =end of file 值 -1
+//	//	//ctrl+z获取getchar的条件 条件为假结束循环
+//	//	putchar(ch);
+//	//}
+//	int ch = 0;
+//	int ret = 0;
+//	char password[20] = { 0 };
+//	printf("请输入密码:>");
+//	scanf("%s", password);//输入函数
+//	//scanf输入到输入缓冲区 然后提取缓冲区中的值遇到空格和\n停止
+//	//scanf只能读取空格前的值
+//	// 输入缓冲区：输入的值的存放点
+//	//输入密码然后存放到password中
+//	//缓冲区剩余一个\n
+//	//读取一次\n 缓冲区
+//	//使getchar进行等待则需要清空输入缓冲区
+//	//getchar();//缓冲区换行被第一个getchar读走
+//	//getchar只能读取一个字符
+//	while ((ch = getchar()) != '\n')//条件为假跳出循环
+//	{
+//		;//空语句
+//	}
+//	printf("请确认(Y/N):>");
+//	ret = getchar();
+//	//getchar从输入缓冲区读取剩余的值\n
+//	// scanf遇到\n停止
+//	//输入函数
+//	//此时ret取了\n的值，回车值ascII值为10
+//	if (ret == 'Y')
+//	{
+//		printf("确认\n");
+//	}
+//	else
+//	{
+//		printf("放弃确认\n");
+//	}
+//
+//	return 0;
+//	
+//}
+//int main()
+//{
+//	int ch = 0;
+//	while ((ch = getchar()) != EOF)
+//	{
+//		if (ch<'0' || ch>'9')//一个为真则为真
+//			//只输出数字整形字符
+//			continue;//跳过此次循环后的代码
+//		putchar(ch);
+//	}
+//	return 0;
+//}
+//int main()
+//{
+//	int i = 1;
+//	while (i<=10)
+//	{
+//		if (i == 5)
+//			continue;
+//			printf("%d ", i);
+//		i++;
+//	}
+//	return 0;
+//}
+//for(表达式1（初始化循环变量），表达式2（条件判断部分），表达式3（调整部分，用于循环条件的整理）)
+//循环语句
+//int main()
+//{
+//	int i = 0;
+//	for (i = 1; i <= 100; i++)//一百内的奇数
+//		//初始化条件
+//		//判断真假执行语句后再走表达式3，条件为假结束
+//	{
+//		if (i == 5)
+//		continue;
+//		printf("%d\n", i);
+//	}
+//	return 0;
+//}
+//while循环语句过多修改时麻烦且易出错
+//int main()
+//{
+//	int i = 0;//初始化
+//	while (i < 10)//判断
+//	{
+//		//
+//		i++//循环变量的调整
+//	}
+//	return 0;
+//}
+//int main()
+//{
+//	int i = 0;
+//	for (i = 0; i<10; i++)//for语句循环控制变量取值采取前闭后开区间写法
+//	{
+//		if (i == 5)//i = 5 将循环变量在循环体内更改，进入死循环
+//			printf("haha\n");
+//		printf("hehe\n");//else语句
+//	}
+//	return 0;
+//}
+//int main()
+//{
+//	int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
+//	int i = 0;
+//	for ( i = 0; i < 10; i++)//i = 0; i < 10即前闭后开区间
+//	{
+//		printf("%d ", arr[i]);
+//	}
+//	return 0;
+//}
+//int main()
+//{
+//	for (;;)初始化没有，判断也没有所以不做初始化和判断直接进入循环
+//	{
+//		printf("hehe\n");//死循环
+//	}
+//	return 0;
+//}for循环初始化和判断都可省略
+// 但是判断被省略则条件恒为真
+//int main()
+//{
+//	int i = 0;
+//	int j = 0;
+//	for ( i = 0; i < 10; i++)
+//	{//j先走10次i才加一,每一次i加都有10个j
+//		//结果则为10*10
+//		for (j = 0; j < 10; j++)//循环变量未初始化（为循环外部定义时）变量跳出循环不销毁
+//		{
+//			printf("hehe\n");
+//		}
+//	}
+//	return 0;
+//}
 int main()
 {
-	//int ch = getchar();//输入（接收）一个字符
-	//putchar(ch);//输出字符
-	//printf("%c\n", ch);
-	//return 0;
-	//int ch = 0;
-	//while ((ch = getchar()) != EOF)//判断条件//EOF：文件结束标志
-	//{//getchar遇到CTRL+Z结束
-	//	//EOF =end of file 值 -1
-	//	//ctrl+z获取getchar的条件 条件为假结束循环
-	//	putchar(ch);
-	//}
-	char password[20] = { 0 };
-	printf("输入密码:>");
-	scanf("%s", password);//输入密码然后存放到password中
-	printf("请确认(Y/N):>");
+	int x, y;
+	for (x = 0, y = 0;x<=2 && y<5; ++x,y++)
+	{
+
+	}printf("hehe\n");
 	return 0;
 }
-//for(三个表达式)
 //do while
